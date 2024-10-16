@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="icon" href="./Used/png.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<body>
+    <section id="home">
+        <div class="header">
+            <div>
+                <nav id="navbar">
+                    <img src="./Used/png.png" class="logo">
+                        <ul class="menu" id="menu">
+                            <li class="navwr">
+                                <a href="#home" class="navlink">Home</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#gambar" class="navlink">Gambar</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#video" class="navlink">Video</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#program" class="navlink">Program</a>
+                            </li>
+                            <li class="navwr">
+                                <a href="#me" class="navlink">Me</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+        </div>   
+    </section>
+    <section id="gambar">
+        <div class="header red">
+            <div class="tesclass">
+                <h1>
+                    Gambar
+                    <!--img src="./Gambar/"-->
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <div class="header red">
+            <div class="tesclass">
+                <h1>
+                    Video
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="program">
+        <div class="header red">
+            <div class="tesclass">
+                <h1>
+                    Program
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="me">
+        <div class="header blu">
+            <div class="nomor">
+                <h1>nramahadi2@gmail.con</h1><br>
+            </div>
+            <div class="icon">
+                <a class="tombol" target="_blank" href="https://www.instagram.com/__rmhd__/"><i class="fab fa-instagram"></i></a>
+                <!--<a class="tombol" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f" ></i></a>
+                <a class="tombol" target="_blank" href="https://twitter.com/hanura_d"><i class="fab fa-twitter"></i></a>-->
+            </div>
+        </div>
+    </section>
+<script>
+    var navbar = document.getElementById ("navbar")
+    var menu = document.getElementById ("menu")
+        
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+            
+    }
+    </script>
+</body>
+</html>
